@@ -166,7 +166,7 @@ module.exports = function(grunt) {
         },
         files: [{
           expand: true,
-          src: ['rising_sphinx_theme/static/js/*.js', '!pt_lightning_sphinx_theme/static/js/*.min.js'],
+          src: ['rising_sphinx_theme/static/js/*.js', '!rising_sphinx_theme/static/js/*.min.js'],
           dest: 'rising_sphinx_theme/static/js/',
           rename: function (dst, src) {
             // Use unminified file name for minified file
@@ -185,7 +185,7 @@ module.exports = function(grunt) {
       fonts: ["rising_sphinx_theme/static/fonts"],
       images: ["rising_sphinx_theme/static/images"],
       css: ["rising_sphinx_theme/static/css"],
-      js: ["rising_sphinx_theme/static/js/*", "!pt_lightning_sphinx_theme/static/js/modernizr.min.js"]
+      js: ["rising_sphinx_theme/static/js/*", "!rising_sphinx_theme/static/js/modernizr.min.js"]
     },
 
     watch: {
